@@ -1,1 +1,46 @@
 // Navigation Styles here
+
+.container-nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px dashed @navigation-border;
+    width: 100%;
+    // .test(red);
+}
+
+nav {
+    display: flex;
+    // flex-wrap: nowrap;
+   .max-out(880px);
+    padding: 1% 2%;
+    align-items: center;
+    justify-content: space-between;
+    // .test(blue);
+
+
+    ul {
+    display: flex;
+    justify-content: flex-end;
+    // .test(red);
+    max-width: 700px;
+    width: 50%;
+     }
+
+    li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        // .test(green);
+    }
+
+    a {
+        font-size: 1.75rem;
+        color: @shark;
+        white-space: nowrap;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        // .test(green);
+    }
+
+}
