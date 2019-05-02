@@ -3,6 +3,9 @@
   header {
     h2 {
       margin-top: 2%;
+      @media @mobile {
+       margin-top: 5%;
+      }
     }
   }
 
@@ -12,11 +15,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+      @media @mobile {
+        flex-direction: column;
+      }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-content {
@@ -25,6 +36,11 @@
 
       img {
         border-radius: 10px;
+      }
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
       }
     }
   }
@@ -64,9 +80,9 @@
       margin-bottom: 30px;
     }
   }
-
+ 
   .btn {
     .buttons(@white, @button-bg);
   }
-  
+
 }// home 
