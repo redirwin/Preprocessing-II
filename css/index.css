@@ -272,12 +272,16 @@ nav a:hover {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
-    padding: 0;
   }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -291,6 +295,11 @@ nav a:hover {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -300,9 +309,22 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .btn {
   width: 80%;
@@ -312,4 +334,9 @@ nav a:hover {
   border-radius: 10px;
   font-size: 1.75rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    width: 100%;
+  }
 }
